@@ -14,9 +14,9 @@ class Fretboard extends Component {
 
   render() {
     return (
-    	<ul>
+    	<div class='fretboard'>
     	{ this.stringList(this.state.tuning)}
-    	</ul>
+    	</div>
      )
   }
 }
