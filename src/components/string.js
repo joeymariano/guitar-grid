@@ -22,7 +22,13 @@ const notesFlats =  [ 'C0','Db0','D0','Eb0','E0','F0','Gb0','G0','Ab0','A0','Bb0
 										 	'C7','Db7','D7','Eb7','E7','F7','Gb7','G7','Ab7','A7','Bb7','B7',
 										 	'C8','Db8','D8','Eb8','E8','F8','Gb8','G8','Ab8','A8','Bb8','B8' ]
 
-const calcNote = (note) => {
+const calcNote = (note, key) => {
+	let noteLocal = notesFlats.indexOf(note)
+	let result = notesFlats[noteLocal] + key // might need to convert to string
+	return result
+}
+
+const returnNotes = () => {
 	
 }
 

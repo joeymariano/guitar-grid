@@ -1,7 +1,6 @@
 .note{
   grid-row-start: 1;
   grid-row-end: 12;
-
   height: 10px;
 	background-color: black;
 }
