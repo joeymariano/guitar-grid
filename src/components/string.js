@@ -2,6 +2,21 @@ import React from 'react'
 import Note from './note'
 import './string.css'
 
-export default function Strng(){
-	return <Note />
+function Strng(props){
+	return( <div class="string" key={props.key}>
+						<Note name={props.stringName} />
+						<Note />
+						<Note />
+						<Note />
+						<Note />
+						<Note />
+						<Note />
+						<Note />
+						<Note />
+						<Note />
+						<Note />
+						<Note />
+					</div> )
 }
+
+export default Strng
