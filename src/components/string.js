@@ -2,6 +2,8 @@ import React from 'react'
 import Note from './note'
 import './string.css'
 
+// define tonal system
+
 const notesSharps = [ 'C0','C#0','D0','D#0','E0','F0','F#0','G0','G#0','A0','A#0','B0',
 										 	'C1','C#1','D1','D#1','E1','F1','F#1','G1','G#1','A1','A#1','B1',
 										 	'C2','C#2','D2','D#2','E2','F2','F#2','G2','G#2','A2','A#2','B2',
@@ -22,16 +24,19 @@ const notesFlats =  [ 'C0','Db0','D0','Eb0','E0','F0','Gb0','G0','Ab0','A0','Bb0
 										 	'C7','Db7','D7','Eb7','E7','F7','Gb7','G7','Ab7','A7','Bb7','B7',
 										 	'C8','Db8','D8','Eb8','E8','F8','Gb8','G8','Ab8','A8','Bb8','B8' ]
 
+// placeholder for Notes component
 let frets = new Array('','','','','','','','','','','','');
 
 const calcNote = (note, key) => {
 	let noteLocal = notesFlats.indexOf(note)
-	let result = notesFlats[noteLocal] + key // might need to convert to string
+	let result = notesFlats[noteLocal + key] // might need to convert to string
 	return result
 }
 
 const renderNotes = (stringName) => {
-	return frets.map( (nothin) => <Note /> )
+	return frets.map( (nothin, idx) => 
+		<Note noteName={ calcNote(stringName, idx) } key={idx}/> 
+	)
 }
 
 function Strng(props){

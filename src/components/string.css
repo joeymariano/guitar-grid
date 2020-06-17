@@ -1,5 +1,6 @@
 .string{
 	display: grid;
 	grid-gap: 0px 4px;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
 	margin: 6px 4px 6px 4px;
 }
