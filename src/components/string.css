@@ -2,6 +2,6 @@
 	display: grid;
 	grid-gap: 0px 4px;
 	/* values from https://www.stewmac.com/FretCalculator */
-	grid-template-columns: 0.674fr 0.636fr  0.600fr 0.566fr 0.566fr 0.505fr 0.476fr 0.450fr 0.424fr 0.400fr 0.378fr 0.357fr ;
+	grid-template-columns: 0.674fr 0.636fr  0.600fr 0.566fr 0.566fr 0.505fr 0.476fr 0.450fr 0.424fr 0.400fr 0.378fr 0.357fr 0.337fr;
 	margin: 6px 4px 6px 4px;
 }

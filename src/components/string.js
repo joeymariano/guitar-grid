@@ -25,11 +25,11 @@ const notesFlats =  [ 'C0','Db0','D0','Eb0','E0','F0','Gb0','G0','Ab0','A0','Bb0
 										 	'C8','Db8','D8','Eb8','E8','F8','Gb8','G8','Ab8','A8','Bb8','B8' ]
 
 // placeholder for Notes component
-let frets = new Array('','','','','','','','','','','','');
+let frets = new Array('','','','','','','','','','','','','');
 
 const calcNote = (note, key) => {
 	let noteLocal = notesFlats.indexOf(note)
-	let result = notesFlats[noteLocal + key] // might need to convert to string
+	let result = notesFlats[noteLocal + key]
 	return result
 }
 
