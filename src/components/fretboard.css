@@ -4,3 +4,9 @@
 	border: 4px solid black;
 	border-radius: 10px;
 }
+.fretboard_container{
+	margin: 2% 10% 0 10%;
+	/* top right bottom left */
+	border: 4px solid black;
+	border-radius: 10px;
+}

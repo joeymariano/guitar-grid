@@ -17,7 +17,7 @@ class Fretboard extends Component {
     return (
     	<div class='fretboard'>
     		{ this.renderStrings() }
-    	</div>
+    	</div> 
      )
   }
 }
