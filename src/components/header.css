@@ -1,6 +1,5 @@
-.header{
-		margin: 10% 10% 0 10%;
-		/* top right bottom left */
+.header {
+		margin: 10% 10% 0 10%; /* T R B L */
 		text-align: left;
 		font-size: 4em;
 		font-style: italic;

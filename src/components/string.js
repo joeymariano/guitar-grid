@@ -4,16 +4,17 @@ import './string.css'
 import { notesFlats, notesSharps } from '../abstracts/tonal_system'
 
 function Strng(props){
-	let frets = new Array('','','','','','','','','','','','');
+	let frets = ['','','','','','','','','','','','']
+	// 12 values to include open strings
 
 	const calcNote = (note, key) => {
 		let noteLocal = notesFlats.indexOf(note)
-		let result = notesFlats[noteLocal + (key + 1)]
+		let result = notesFlats[noteLocal + (key +1)]
 		return result
 	}
 
 	const renderNotes = (stringName) => {
-		return frets.map( (nothin, idx) => 
+		return frets.map( (emptyString, idx) => 
 			<Note noteName={ calcNote(stringName, idx) } key={idx}/> 
 		)
 	}
