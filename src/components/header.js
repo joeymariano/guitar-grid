@@ -3,7 +3,7 @@ import './header.css'
 
 function Header(){
 	return( <div class="header">
-						GUITAR GRID
+						GUITAR CALC
 					</div> )
 }
 
