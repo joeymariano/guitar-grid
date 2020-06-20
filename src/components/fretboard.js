@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import Strng from './string'
+import OpenStrings from './openStrings'
 import './fretboard.css'
 
 class Fretboard extends Component {
@@ -16,6 +17,7 @@ class Fretboard extends Component {
   render() {
     return (
     	<div class='fretboard'>
+        <OpenStrings stringNames={this.state.tuning}/>
     		{ this.renderStrings() }
     	</div> 
      )
