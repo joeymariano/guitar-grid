@@ -15,7 +15,7 @@ function Strng(props){
 
 	const renderNotes = (stringName) => {
 		return frets.map( (emptyString, idx) => 
-			<Note noteName={ calcNote(stringName, idx) } key={idx}/> 
+			<Note noteName={ calcNote(stringName, idx) } key={idx} fretNumber={idx}/> 
 		)
 	}
 

@@ -5,7 +5,7 @@ import './strings.css'
 function Strings(props){
 
 	const renderStrings = () => {
-		return props.stringNames.reverse().map( (stringName, idx) =>
+		return props.stringNames.map( (stringName, idx) =>
 			<Strng stringName={stringName} key={idx}/>
 		)
 	}
