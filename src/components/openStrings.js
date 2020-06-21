@@ -1,9 +1,10 @@
 import React from 'react'
 import OpenString from './openString'
+import './openStrings.css'
 
 function OpenStrings(props){
 	const renderOpenStrings = () => {
-		return props.stringNames.map( (stringName, idx) =>
+		return props.stringNames.reverse().map( (stringName, idx) =>
 			<OpenString stringName={stringName} key={idx}/>
 		)
 	}

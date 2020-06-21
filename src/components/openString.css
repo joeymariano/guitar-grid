@@ -1,0 +1,10 @@
+.openString {
+	grid-column-start: 1;
+  grid-column-end: 2;
+	background-color: black;
+	color: white;
+	text-align: right;
+	font-weight: bolder;
+	padding: 2px 2px 2px 2px;	/* T R B L */
+	border-radius: 25%;
+}
