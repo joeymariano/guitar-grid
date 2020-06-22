@@ -5,5 +5,17 @@
 	color: white;
 	text-align: right;
 	font-weight: bolder;
-	padding: 2px 2px 2px 2px;	/* T R B L */
+	padding: 2px 4px 3px 2px;	/* T R B L */
+	border-radius: 2px;
+}
+
+.noteContainer{
+	margin-top: auto;
+	margin-bottom: auto;
+}
+
+.fret0{
+	padding:7px;
+	border-radius: 50%;
+	margin-right: 2px;
 }

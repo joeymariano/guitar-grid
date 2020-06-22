@@ -1,8 +1,0 @@
-#openStrings {
-	display: grid;
-	grid-gap: 8px;
-	/* values from https://www.stewmac.com/FretCalculator */
-	grid-template-columns: .1fr;
-	margin: 10px 4px 0 12px; /* T R B L */
-	float: left;
-}
