@@ -1,13 +1,11 @@
 import React from 'react';
 import './App.css';
-import Fretboard from './components/guitar/fretboard'
-import Header from './components/header'
+import MasterContainer from './components/masterContainer'
 
 function App() {
   return (
     <div className="App">
-    	<Header />
-      <Fretboard/>
+    	<MasterContainer />
     </div>
   );
 }

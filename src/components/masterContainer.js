@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import Strings from './strings'
 import Fretboard from './guitar/fretboard'
 import Header from './header'
 
@@ -14,9 +13,9 @@ class MasterContainer extends Component {
 
   render() {
     return (
-    	<div class='masterContainer'>
+    	<div id='masterContainer'>
         <Header />
-        <Fretboard insrtument={this.state.tuning.guitar}/>
+        <Fretboard stringNames={this.state.tuning.guitar}/>
     	</div> 
      )
   }
