@@ -5,7 +5,7 @@ import { notesFlats, notesSharps } from '../../abstracts/tonal_system'
 
 function Strng(props){
 	let frets = ['','','','','','','','','','','','','']
-	// 12 values to include open strings
+	// 13 values to include open strings
 
 	const calcNote = (note, key) => {
 		let noteLocal = notesFlats.indexOf(note)
