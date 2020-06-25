@@ -14,7 +14,7 @@ class Fretboard extends Component {
   render() {
     return (
     	<div class='fretboard'>
-    		<Strings stringNames={this.state.tuning.mandolin}/>
+    		<Strings stringNames={this.state.tuning.guitar}/>
     	</div> 
      )
   }

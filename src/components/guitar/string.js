@@ -1,7 +1,7 @@
 import React from 'react'
 import Note from './note'
 import './string.css'
-import { notesFlats, notesSharps } from '../abstracts/tonal_system'
+import { notesFlats, notesSharps } from '../../abstracts/tonal_system'
 
 function Strng(props){
 	let frets = ['','','','','','','','','','','','','']

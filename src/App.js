@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import Fretboard from './components/fretboard'
+import Fretboard from './components/guitar/fretboard'
 import Header from './components/header'
 
 function App() {
@@ -8,7 +8,6 @@ function App() {
     <div className="App">
     	<Header />
       <Fretboard/>
-      {/* labels go here */}
     </div>
   );
 }
