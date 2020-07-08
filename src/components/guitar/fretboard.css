@@ -1,5 +1,5 @@
 .fretboard {
-	margin: 2% 10% 0 10%;	/* T R B L */
+	margin: 2% 0 2% 0;	/* T R B L */
 	border: 4px solid black;
 	border-radius: 10px;
 }

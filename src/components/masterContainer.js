@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import Fretboard from './guitar/fretboard'
 import Header from './header'
+import Calculator from './calculator'
+import './masterContainer.css'
 
 class MasterContainer extends Component {
   constructor(props){
@@ -11,11 +13,16 @@ class MasterContainer extends Component {
                             mandolin: ['D3', 'G3', 'A4', 'E4']} }
   }
 
+  chooseInstrument = () => {
+
+  }
+
   render() {
     return (
     	<div id='masterContainer'>
         <Header />
-        <Fretboard stringNames={this.state.tuning.guitar}/>
+        <Fretboard stringNames={this.state.tuning.ukulele}/>
+        <Calculator />
     	</div> 
      )
   }
