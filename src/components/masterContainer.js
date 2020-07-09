@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import Fretboard from './guitar/fretboard'
 import Header from './header'
-import Calculator from './calculator'
+import Calculator from './calculator/calculator'
 import './masterContainer.css'
 
 class MasterContainer extends Component {
