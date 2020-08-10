@@ -3,13 +3,13 @@ import Button from './button'
 import Dropdown from './dropdown'
 import './calculator.css'
 
-function Calculator(){
+function Calculator(props){
 	return( 	<form id="calculator">
 							<legend>&nbsp;Calculate&nbsp;</legend>
 							<br></br>
 				      <div class='grid-container'>
 
-				      	<Dropdown />
+				      	<Dropdown chooseInstrument={ props.chooseInstrument } />
 				      	<Button />
 				      	<Button />
 
