@@ -3,7 +3,6 @@ import Fretboard from './guitar/fretboard'
 import Header from './header'
 import Calculator from './calculator/calculator'
 import './masterContainer.css'
-import tunings from '../abstracts/tunings'
 
 class MasterContainer extends Component {
   constructor(props){
@@ -11,16 +10,21 @@ class MasterContainer extends Component {
   	this.state = { instrument: 'guitar' }
   }
 
+  tunings = { guitar: ['E2', 'A2', 'D3', 'G3', 'B3', 'E4'],
+                  bass: ['E1', 'A1', 'D2', 'G2'],
+                  ukulele: ['G3', 'C3', 'E3', 'A3'],
+                  mandolin: ['D3', 'G3', 'A4', 'E4'] }
+
   chooseInstrument = (instrument) => {
-    // get tuning from tunings.js
-    // compare (this) tuning state to what the dropdown string is in calculator
+    this.setState({ instrument: instrument })
   }
+
 
   render() {
     return (
     	<div id='masterContainer'>
         <Header />
-        <Fretboard stringNames={['E2', 'A2', 'D3', 'G3', 'B3', 'E4']}/>
+        <Fretboard stringNames={ this.tunings[this.state.instrument]} />
         <Calculator chooseInstrument={ this.chooseInstrument } />
     	</div> 
      )
