@@ -1,12 +1,18 @@
-import React from 'react'
+import React, { Component } from 'react'
 import './button.css'
 
-function Button(){
-	return( <div class='field-grid-item'>
-						<button>
-						TEST BUTTON
-						</button>
-					</div> )
+class Button extends Component {
+	constructor(props){
+		super(props)
+	}
+
+	render() {
+		return( <div class='field-grid-item'>
+							<button>
+							TEST BUTTON
+							</button>
+						</div> )
+	}
 }
 
 export default Button
