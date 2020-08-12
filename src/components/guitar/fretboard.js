@@ -1,6 +1,6 @@
 import React from 'react'
 import Strings from './strings'
-import './fretboard.css'
+import './css/fretboard.css'
 
 function Fretboard(props) {
   return (

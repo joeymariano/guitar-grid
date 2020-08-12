@@ -1,7 +1,7 @@
 import React from 'react'
 import Button from './button'
 import Dropdown from './dropdown'
-import './calculator.css'
+import './css/calculator.css'
 
 function Calculator(props){
 	return( 	<form id="calculator">

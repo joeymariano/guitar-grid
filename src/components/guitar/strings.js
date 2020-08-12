@@ -1,6 +1,6 @@
 import React from 'react'
 import Strng from './string'
-import './strings.css'
+import './css/strings.css'
 
 function Strings(props){
 

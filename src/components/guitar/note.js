@@ -1,5 +1,5 @@
 import React from 'react'
-import './note.css'
+import './css/note.css'
 
 function Note(props){
 	return (
