@@ -10,10 +10,10 @@ class MasterContainer extends Component {
   	this.state = { instrument: 'guitar' }
   }
 
-  tunings = { guitar: ['E2', 'A2', 'D3', 'G3', 'B3', 'E4'],
-              bass: ['E1', 'A1', 'D2', 'G2'],
-              ukulele: ['G3', 'C3', 'E3', 'A3'],
-              mandolin: ['D3', 'G3', 'A4', 'E4'] }
+  tunings = { guitar: ['E2', 'A2', 'D3', 'G3', 'B3', 'E4'].reverse(),
+              bass: ['E1', 'A1', 'D2', 'G2'].reverse(),
+              ukulele: ['G3', 'C3', 'E3', 'A3'].reverse(),
+              mandolin: ['D3', 'G3', 'A4', 'E4'].reverse() }
 
   chooseInstrument = (instrument) => {
     this.setState({ instrument: instrument })
@@ -23,7 +23,7 @@ class MasterContainer extends Component {
     return (
     	<div id='masterContainer'>
         <Header />
-        <Fretboard stringNames={ this.tunings[this.state.instrument]} />
+        <Fretboard stringNames={ this.tunings[this.state.instrument] } />
         <Calculator chooseInstrument={ this.chooseInstrument } />
     	</div> 
      )
