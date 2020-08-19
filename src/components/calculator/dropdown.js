@@ -10,8 +10,8 @@ class Dropdown extends Component {
 	}
 
 	handleChange(event) {
-    // this.setState({instrument: event.target.value}); 
-    this.props.chooseInstrument(event.target.value) // sending to master container to change state
+    this.props.chooseInstrument(event.target.value)
+    // sending to master container to change state
   }
 
 	render(){
