@@ -18,13 +18,15 @@ class Dropdown extends Component {
 		return( <div class='field-grid-item'>
 							<p>
 						  	<label>Instrument </label>
-						    <select id="instrumentList" value={this.state.value} onChange={this.handleChange}>  
+						    <select id="instrumentList" value={this.state.value} onChange={this.handleChange}>
+						 			{/* need to change this to spit out this.props.list
+						 					and feed it from masterContainer => dropdown */}
 						      <option value="guitar">guitar</option>
 						      <option value="bass">bass</option>
 						      <option value="ukulele">ukulele</option>
 						      <option value="mandolin">mandolin</option>
 						    </select>
-						  </p> 
+						  </p>
 					  </div> )
 	}
 }

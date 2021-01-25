@@ -11,13 +11,13 @@ class Button extends Component {
 
 	handleClick = (event) => {
 		event.preventDefault()
-		this.setState({ activated: this.state.activated = !this.state.activated })
+		this.setState({ activated: !this.state.activated })
 	}
 
 	render() {
 		return( <div class='field-grid-item'>
 							<button onClick={ this.handleClick }>
-							TEST BUTTON
+								TEST BUTTON
 							</button>
 						</div> )
 	}
