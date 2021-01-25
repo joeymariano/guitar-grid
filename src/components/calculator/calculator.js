@@ -10,8 +10,8 @@ function Calculator(props){
 				      <div class='grid-container'>
 
 				      	<Dropdown chooseInstrument={ props.chooseInstrument } />
-				      	<Button />
-				      	<Button />
+				      	<Button title={ "" } />
+				      	<Button title={ "" } />
 
 				      </div>
 				    </form> )

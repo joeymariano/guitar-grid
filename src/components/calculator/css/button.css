@@ -3,3 +3,11 @@
 	margin-top: auto;
 	margin-bottom: auto;
 }
+
+button {
+	background-color: black;
+	border-radius: 5px;
+	color: white;
+	border: none;
+	padding: 5px 10px;
+}
