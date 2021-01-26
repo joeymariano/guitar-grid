@@ -25,7 +25,7 @@ class MasterContainer extends Component {
         <Header />
         <Fretboard stringNames={ this.tunings[this.state.instrument] } />
         <Calculator chooseInstrument={ this.chooseInstrument } />
-    	</div> 
+    	</div>
      )
   }
 }

@@ -8,11 +8,9 @@ function Calculator(props){
 							<legend>&nbsp;Calculate&nbsp;</legend>
 							<br></br>
 				      <div class='grid-container'>
-
 				      	<Dropdown chooseInstrument={ props.chooseInstrument } />
-				      	<Button title={ "" } />
-				      	<Button title={ "" } />
-
+				      	<Button title={ "MAJOR Δ" } />
+				      	<Button title={ "MINOR -" } />
 				      </div>
 				    </form> )
 }

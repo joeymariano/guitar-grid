@@ -17,7 +17,7 @@ class Button extends Component {
 	render() {
 		return( <div class='field-grid-item'>
 							<button onClick={ this.handleClick }>
-								TEST BUTTON
+								{ this.props.title }
 							</button>
 						</div> )
 	}
