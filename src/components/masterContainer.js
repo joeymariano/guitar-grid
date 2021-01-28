@@ -7,7 +7,9 @@ import './masterContainer.css'
 class MasterContainer extends Component {
   constructor(props){
   	super(props)
-  	this.state = { instrument: 'guitar' }
+  	this.state = {  instrument: 'guitar',
+                    root: 'C',
+                    noteCollection: ['C', 'E', 'G'] }
   }
 
   tunings = { guitar: ['E2', 'A2', 'D3', 'G3', 'B3', 'E4'].reverse(),
@@ -23,7 +25,11 @@ class MasterContainer extends Component {
     return (
     	<div id='masterContainer'>
         <Header />
-        <Fretboard stringNames={ this.tunings[this.state.instrument] } />
+
+        <Fretboard  stringNames={ this.tunings[this.state.instrument] }
+                    root={ this.state.root }
+                    noteCollection={ this.state.noteCollection} />
+
         <Calculator chooseInstrument={ this.chooseInstrument } />
     	</div>
      )
