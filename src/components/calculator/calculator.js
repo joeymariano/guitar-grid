@@ -6,11 +6,14 @@ import './css/calculator.css'
 function Calculator(props){
 	return( 	<form id="calculator">
 							<legend>&nbsp;Calculate&nbsp;</legend>
-							<br></br>
+							<br />
+							<Dropdown chooseInstrument={ props.chooseInstrument } />
+							<br />
 				      <div class='grid-container'>
-				      	<Dropdown chooseInstrument={ props.chooseInstrument } />
 				      	<Button title={ "MAJOR Δ" } />
 				      	<Button title={ "MINOR -" } />
+								<Button title={ "AUGMENTED +" } />
+								<Button title={ "DIMINISHED o" } />
 				      </div>
 				    </form> )
 }

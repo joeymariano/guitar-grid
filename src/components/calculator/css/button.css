@@ -1,7 +1,6 @@
 .field-grid-item {
 	text-align: center;
-	margin-top: auto;
-	margin-bottom: auto;
+	margin: auto;
 }
 
 button {
@@ -10,4 +9,5 @@ button {
 	color: white;
 	border: none;
 	padding: 5px 10px;
+	margin: 5px 10px;
 }

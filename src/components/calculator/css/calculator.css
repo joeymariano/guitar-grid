@@ -1,7 +1,7 @@
 .grid-container {
 	display: grid;
 	grid-column-gap: 50px;
-	grid-template-columns: auto auto auto;
+	grid-template-columns: auto auto auto auto;
 
 	border: 2px dashed black;
 	border-radius: 4px;

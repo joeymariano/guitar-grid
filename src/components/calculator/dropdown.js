@@ -15,8 +15,8 @@ class Dropdown extends Component {
   }
 
 	render(){
-		return( <div class='field-grid-item'>
-							<p>
+		return(
+							<p id='instrument-select'>
 						  	<label>Instrument </label>
 						    <select id="instrumentList" value={this.state.value} onChange={this.handleChange}>
 						 			{/* need to change this to spit out this.props.list
@@ -27,7 +27,7 @@ class Dropdown extends Component {
 						      <option value="mandolin">mandolin</option>
 						    </select>
 						  </p>
-					  </div> )
+					   )
 	}
 }
 
