@@ -26,7 +26,10 @@ class MasterContainer extends Component {
     	<div id='masterContainer'>
         <Header />
 
+        {/* pass all state props and state update helpers */}
+
         <Fretboard  stringNames={ this.tunings[this.state.instrument] }
+
                     root={ this.state.root }
                     noteCollection={ this.state.noteCollection} />
 
