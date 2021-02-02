@@ -12,6 +12,8 @@ class MasterContainer extends Component {
                     noteCollection: ['C', 'E', 'G'] }
   }
 
+  /* constants */
+
   tunings = { guitar: ['E2', 'A2', 'D3', 'G3', 'B3', 'E4'].reverse(),
               bass: ['E1', 'A1', 'D2', 'G2'].reverse(),
               ukulele: ['G3', 'C3', 'E3', 'A3'].reverse(),
@@ -27,6 +29,10 @@ class MasterContainer extends Component {
     this.setState({ root: root })
   }
 
+  updateNoteCollection = (noteCollection) => {
+    this.setState({ noteCollection: noteCollection })
+  }
+
   render() {
     return (
     	<div id='masterContainer'>
@@ -35,12 +41,12 @@ class MasterContainer extends Component {
         { /* pass all state props and state update helpers */ }
 
         <Fretboard  stringNames={ this.tunings[this.state.instrument] /* passing tuning constant */ }
-
-                    noteCollection={ this.state.noteCollection /* passing state access variables for readOnly */ }
-                    root={ this.state.root /* need to pass through fretboard */ } />
+                    root={ this.state.root /* need to pass through fretboard */ }
+                    noteCollection={ this.state.noteCollection /* passing state access variables for readOnly */ } />
 
         <Calculator chooseInstrument={ this.chooseInstrument /* passing state updater */ }
-                    chooseRoot={ this.chooseRoot /* need to pass through fretboard */ } />
+                    chooseRoot={ this.chooseRoot /* need to pass through fretboard */ }
+                    updateNoteCollection={ this.updateNoteCollection } />
     	</div>
      )
   }
