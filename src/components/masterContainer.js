@@ -17,8 +17,14 @@ class MasterContainer extends Component {
               ukulele: ['G3', 'C3', 'E3', 'A3'].reverse(),
               mandolin: ['D3', 'G3', 'A4', 'E4'].reverse() }
 
+  /* state update helpers */
+
   chooseInstrument = (instrument) => {
     this.setState({ instrument: instrument })
+  }
+
+  chooseRoot = (root) => {
+    this.setState({ root: root })
   }
 
   render() {
@@ -26,14 +32,15 @@ class MasterContainer extends Component {
     	<div id='masterContainer'>
         <Header />
 
-        {/* pass all state props and state update helpers */}
+        { /* pass all state props and state update helpers */ }
 
-        <Fretboard  stringNames={ this.tunings[this.state.instrument] }
+        <Fretboard  stringNames={ this.tunings[this.state.instrument] /* passing tuning constant */ }
 
-                    root={ this.state.root }
-                    noteCollection={ this.state.noteCollection} />
+                    noteCollection={ this.state.noteCollection /* passing state access variables for readOnly */ }
+                    root={ this.state.root /* need to pass through fretboard */ } />
 
-        <Calculator chooseInstrument={ this.chooseInstrument } />
+        <Calculator chooseInstrument={ this.chooseInstrument /* passing state updater */ }
+                    chooseRoot={ this.chooseRoot /* need to pass through fretboard */ } />
     	</div>
      )
   }
