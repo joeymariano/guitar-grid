@@ -14,7 +14,7 @@ class MasterContainer extends Component {
 
   /* constants */
 
-  tunings = { guitar: ['E2', 'A2', 'D3', 'G3', 'B3', 'E4'].reverse(),
+  TUNINGS = { guitar: ['E2', 'A2', 'D3', 'G3', 'B3', 'E4'].reverse(),
               bass: ['E1', 'A1', 'D2', 'G2'].reverse(),
               ukulele: ['G3', 'C3', 'E3', 'A3'].reverse(),
               mandolin: ['D3', 'G3', 'A4', 'E4'].reverse() }
@@ -38,9 +38,11 @@ class MasterContainer extends Component {
     	<div id='masterContainer'>
         <Header />
 
-        { /* pass all state props and state update helpers */ }
+        { /*  pass all state props and state update helpers
+              fretboard needs read only access to master container state
+              calculator needs access to this.setState wrapper functions */ }
 
-        <Fretboard  stringNames={ this.tunings[this.state.instrument] /* passing tuning constant */ }
+        <Fretboard  stringNames={ this.TUNINGS[this.state.instrument] /* passing tuning constant */ }
                     root={ this.state.root /* need to pass through fretboard */ }
                     noteCollection={ this.state.noteCollection /* passing state access variables for readOnly */ } />
 
